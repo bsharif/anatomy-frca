@@ -6,7 +6,7 @@ categories:
 author_staff_member: robin
 ---
 
-The beginnings of digital marketing technology can be traced back to the 1980's, when computers became sophisticated enough to store huge volumes of customer information. For a brief moment, no one knew what would happen in digital marketing, but by the 90's it all became clear.
+## The beginnings of digital marketing technology can be traced back to the 1980's, when computers became sophisticated enough to store huge volumes of customer information. For a brief moment, no one knew what would happen in digital marketing, but by the 90's it all became clear.
 
 ![Man](https://source.unsplash.com/random/1500x1146)
 
@@ -24,7 +24,7 @@ This division parallels the distinction between the history of economic thought 
 
 ![Thai](https://source.unsplash.com/random/1500x1147)
 
-Practitioners of the history of marketing thought note that both practitioners and academics know relatively little about the field.[citation needed] But history has significance for academics because it helps to define the baselines upon which they can recognize change and evolve marketing theory.On the other hand, proponents of marketing history argue that one cannot fully compare the marketing field with economics and hence suggest the impracticality of divorcing theory and practice. First, marketing scholars seldom engage in the practice of marketing as much as economists engage in the development and execution of public policies. Second, business people innovate in the marketing field, and the history of marketing will remain incomplete if one dissociates academia from practitioners.
+Practitioners of the history of marketing thought note that both practitioners and academics know relatively little about the field.\[citation needed\] But history has significance for academics because it helps to define the baselines upon which they can recognize change and evolve marketing theory.On the other hand, proponents of marketing history argue that one cannot fully compare the marketing field with economics and hence suggest the impracticality of divorcing theory and practice. First, marketing scholars seldom engage in the practice of marketing as much as economists engage in the development and execution of public policies. Second, business people innovate in the marketing field, and the history of marketing will remain incomplete if one dissociates academia from practitioners.
 
 ![lavender flowers](https://source.unsplash.com/random/1500x1148)
 
