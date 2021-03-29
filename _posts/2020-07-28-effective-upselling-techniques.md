@@ -1,9 +1,9 @@
 ---
-date: 2020-07-28
 title: Effective upselling techniques
+date: 2020-07-28 00:00:00 Z
 categories:
-  - sales
-  - tips
+- sales
+- tips
 author_staff_member: betty
 ---
 
