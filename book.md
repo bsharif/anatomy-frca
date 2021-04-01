@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Book
+layout: page
 description: A new textbook
 ---
 
