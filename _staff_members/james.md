@@ -1,8 +1,9 @@
 ---
 title: James
-position: Anaesthetic Consultant
+position: 0
 name: James Bowness
-image_path:
-twitter:
+image_path: 
+twitter: 
 blurb: Likes anatomy
 ---
+
