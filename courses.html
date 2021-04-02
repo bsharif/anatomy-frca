@@ -94,7 +94,7 @@ programme:
 		<div class="form-group">
 			<label class="col-md-4 control-label" for="course">Which course do you want to attend?</label>
 			<div class="col-md-4">
-			  <select id="course" name="course" class="form-control">
+			  <select id="course" name="course" class="form-control select-css">
 				<option value="Cardiff - 4th June 2021">Cardiff - 4th June 2021</option>
 				<option value="St Andrews - 25th March 2022">St Andrews - 25th March 2022</option>
 			  </select>
@@ -104,7 +104,7 @@ programme:
 		  <div class="form-group">
 			<label class="col-md-4 control-label" for="exam">Which exam are you studying for?</label>
 			<div class="col-md-4">
-			  <select id="exam" name="exam" class="form-control">
+			  <select id="exam" name="exam" class="form-control select-css">
 				<option value="Primary FRCA MCQ">Primary FRCA MCQ</option>
 				<option value="Primary FRCA OSCE/Viva">Primary FRCA OSCE/Viva</option>
 				<option value="Final FRCA Written">Final FRCA Written</option>
@@ -125,19 +125,7 @@ programme:
     {% endfor %}
 	</div>
 </div>
-<section class="testimonial">
-	<div class="">
-		<div class="testimonial-block">
-			<div class="square-image"><img src="{{ site.baseurl }}/images/RA-UK_logo_p.png" alt="Jim James" class="editable"></div>
-			<blockquote>
-				<p class="editable">
-					An engaging, accurate and accessible approach to anatomical revision...We highly recommend this for those studying for the FRCA or wanting to brush up on the foundational knowledge or regional anaesthesia.
-				</p>
-				<p class="editable author">RA-UK</p>
-			</blockquote>
-		</div>
-	</div>
-</section>
+
 <!-- 
 {% if page.faq %}
 	<h2>Questions</h2>
