@@ -12,21 +12,17 @@ description: If you have any questions we'd love to hear from you
 <!-- <div class="map" id="map"></div> -->
 
 <div class="contact-box">
-	<script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-onload="if(submitted) {window.location='{{ site.baseurl }}/contact-success/';}"></iframe>
-	
-	<form name="Contact Us" action="https://docs.google.com/forms/d/e/1FAIpQLSdsQbvBE8m99Rz0UZm4Aflt0n80HdEVh-chyM4yw00UBTDGXA/formResponse" method="post" class="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
+	<form name="Contact Us" action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form" data-netlify="true">
 	
 
 		<label for="name">Full Name</label>
-		<input type="text" name="entry.2017266990" id="name" placeholder="Enter your name..." />
+		<input type="text" name="name" id="name" placeholder="Enter your name..." />
 
 		<label for="email">Email Address</label>
-		<input type="email" name="entry.1206364247" id="email" placeholder="Enter your email..." required />
+		<input type="email" name="email" id="email" placeholder="Enter your email..." required />
 
 		<label for="message">Message</label>
-		<textarea name="entry.1995951234" id="message" placeholder="Enter your message..."></textarea>
+		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
 
 		<input type="submit" value="Send Message" />
 	</form>

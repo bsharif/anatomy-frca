@@ -75,29 +75,22 @@ programme:
 </div>
 
 <div class="contact-box">
-	<script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-onload="if(submitted) {window.location='{{ site.baseurl }}/contact-success/';}"></iframe>
-	
-	<form name="Course Sign Up" action="https://docs.google.com/forms/d/e/1FAIpQLSeX5x8k7-fGP1WAQArxmtlF0o3_nYi7QK3Edkvrs7tpBEVFtw/formResponse" method="post" class="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
+	<form name="Course Sign Up" action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form" data-netlify="true">
 	
 		<h2>Sign Up</h2>
 		<label for="name">Full Name</label>
-		<input type="text" name="entry.1208315084" id="name" placeholder="Enter your name..." />
+		<input type="text" name="name" id="name" placeholder="Enter your name..." />
 
 		<label for="email">Email Address</label>
-		<input type="email" name="entry.866136270" id="email" placeholder="Enter your email..." required />
+		<input type="email" name="email" id="email" placeholder="Enter your email..." required />
 
 		<label for="number">Contact Number</label>
-		<input type="text" name="entry.214942639" id="number" placeholder="Enter your contact number..." required />
-		
-		<label for="number">Hospital Currently At</label>
-		<input type="text" name="entry.1717899996" id="number" placeholder="Enter your contact number..." required />
-		
+		<input type="text" name="number" id="number" placeholder="Enter your contact number..." required />
+
 		<div class="form-group">
 			<label class="col-md-4 control-label" for="course">Which course do you want to attend?</label>
 			<div class="col-md-4">
-			  <select id="course" name="201760907" class="form-control select-css">
+			  <select id="course" name="course" class="form-control select-css">
 				<option value="Cardiff - 4th June 2021">Cardiff - 4th June 2021</option>
 				<option value="St Andrews - 25th March 2022">St Andrews - 25th March 2022</option>
 			  </select>
@@ -107,7 +100,7 @@ onload="if(submitted) {window.location='{{ site.baseurl }}/contact-success/';}">
 		  <div class="form-group">
 			<label class="col-md-4 control-label" for="exam">Which exam are you studying for?</label>
 			<div class="col-md-4">
-			  <select id="exam" name="entry.235299239" class="form-control select-css">
+			  <select id="exam" name="exam" class="form-control select-css">
 				<option value="Primary FRCA MCQ">Primary FRCA MCQ</option>
 				<option value="Primary FRCA OSCE/Viva">Primary FRCA OSCE/Viva</option>
 				<option value="Final FRCA Written">Final FRCA Written</option>
