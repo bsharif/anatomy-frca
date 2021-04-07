@@ -2,18 +2,19 @@
   link: /
   new_window: false
   highlight: false
-- name: Courses
-  link: /courses/
+- name: Book
+  link: /book/
+  new_window: false
+  highlight: false
+- name: Course
+  link: /course/
   new_window: false
   highlight: false
 # - name: Blog
 #   link: /blog/
 #   new_window: false
 #   highlight: false
-- name: Book
-  link: /book/
-  new_window: false
-  highlight: false
+
 # - name: About
 #   link: /about/
 #   new_window: false

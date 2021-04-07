@@ -20,7 +20,7 @@
 
 header {
   color: #fff;
-  padding: 20px 0;
+  padding: 20px 20px 50px 20px;
   background: $brand-color; /* Old browsers */
   background: linear-gradient(
       to bottom,
@@ -41,7 +41,7 @@ header {
   }
 
   .company-name {
-    font-size: 1.7em;
+    font-size: 1.1em;
     line-height: 0;
 
     a {
@@ -77,7 +77,7 @@ header {
 }
 
 section {
-  padding: 100px 0;
+  padding: 30px 0;
 }
 
 section + section {
