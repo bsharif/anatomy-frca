@@ -1,54 +1,38 @@
 ---
-title: Courses
-heading: Anatomy for the FRCA
-description: A one-day course for the Primary and Final FRCA, available in St Andrews and Cardiff.
+title: Store
+heading: Anatomy for the FRCA - Store
+description: A one-day course for the Primary and Final FRCA, available in two locations.
 pricing_table:
-  - name: Cardiff
-    color: "#8e8e8e"
-    features:
-      - text: 4th June 2021
-        highlight: true
-      - text: School of Biosciences, Cardiff University
-        highlight: false
-        location: "https://goo.gl/maps/LeUVjSAtA6KfmrUk6"
-      - text: £70 per person
-        highlight: false
-    call_to_action:
-      link: http://mysite.com?plan=basic
-      text: Cardiff Sign Up
-    sponsor:
-      image: IU_logo.png
-      height: 100px
-      width: unset
-    snipcart:
-      data-item-id: Cardiff-04062021
-      data-item-name: "Cardiff 4th June 2021"
-      data-item-price: 70.00
-      data-item-url: /course/
-      data-item-description: "Anatomy for the FRCA Course - Cardiff - 4th June 2021"
-  - name: St Andrews
-    color: "#8e8e8e"
-    features:
-      - text: 6th August 2021
-        highlight: true
-      - text: School of Medicine, University of St Andrews
-        highlight: false
-        location: "https://goo.gl/maps/FG9cV7jtsaTMswHo9"
-      - text: £70 (£50 for SSA members)
-        highlight: false
-    call_to_action:
-      link: http://mysite.com?plan=basic
-      text: St Andrews Sign Up
-    sponsor:
-      image: SSA_logo.png
-      height: 100px
-      width: 100px
-    snipcart:
-      data-item-id: StAndrews-06082021
-      data-item-name: "St Andrews 6th August 2021"
-      data-item-price: 70.00
-      data-item-url: /course/
-      data-item-description: "Anatomy for the FRCA Course - St Andrews - 6th August 2021"
+- name: School of Biosciences, Cardiff University
+  color: "#8e8e8e"
+  features:
+  - text: 4th June 2021
+    highlight: true
+  - text: For anaesthetists at any stage of exam preparation
+    highlight: false
+  - text: Faculty of experienced anatomists and anaesthetists
+    highlight: false
+  - text: Live sonoanatomy explained on models & cadavers
+    highlight: false
+  - text: Anatomy for the FRCA book included
+    highlight: true
+  - text: "£75 per person"
+    highlight: true
+- name: School of Medicine, University of St Andrews
+  color: "#4a4a4a"
+  features:
+  - text: 25th March 2022
+    highlight: true
+  - text: For anaesthetists at any stage of exam preparation
+    highlight: false
+  - text: Faculty of experienced anatomists and anaesthetists
+    highlight: false
+  - text: Live sonoanatomy explained on models & cadavers
+    highlight: false
+  - text: Anatomy for the FRCA book included
+    highlight: true
+  - text: "£75 per person"
+    highlight: true
 faq:
 - question: What types of payment do you accept?
   answer: Credit cards including MasterCard, Visa or American Express.
@@ -77,19 +61,23 @@ points:
 ---
 <p class="subtext">
 <strong>Anatomy for the FRCA book included</strong>
-
-
+{% for item in page.points %}
+    <p class="subtext">{{ item }}</p>
+    {% endfor %}
+</p>
+<div class="subtext text button">
+	<a href="">Button</a>
+</div>
 <!-- <p class="subtext"><img src="{{ site.baseurl }}/images/course-photo.png" alt="SSA logo" style="width:100%" class="subtext" /></p> -->
 <div class="contact-box">
 	
-	<div class="contact-details" style="text-align: center;">
+	<div class="contact-details">
 		<!-- <h3 class="editable">Address</h3>
 		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address> -->
 
 		<h2 class="editable">Course Programme</h2>
     {% for item in page.programme %}
-    <p style="margin-bottom:10px; text-align:left">{{ item }}</p>
-	
+    <p>{{ item }}</p>
     {% endfor %}
 	</div>
 	<div class="contact-details" style="text-align: center;">
@@ -97,44 +85,38 @@ points:
 		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address> -->
 
 		<!-- <h2 class="editable">Upcoming Dates</h2> -->
-			<h2>Details</h2>
-			{% for item in page.points %}
-			<p style="margin-bottom:15px">{{ item }}</p>
-			{% endfor %}
+			<h2>Cardiff</h2>
+			<p>4th June 2020</p>
+			<p>£70</p>
+			<p>Sponsored by:</p>
+			<img style="width:200px; padding-bottom: 30px;" src="{{ site.baseurl }}/images/IU_logo.png" alt="IU logo">
 
-			
+			<h2>St Andrews</h2>
+			<p>6th August 2020</p>
+			<p>£50 - SSA Members</p>
+			<p>£50 - non-SSA Members</p>
+			<p>Sponsored by:</p>
+			<img style="width:120px" src="{{ site.baseurl }}/images/SSA_logo.png" alt="SSA logo">
+
 	</div>
 </div>
-<div class="plans">
+<!-- <div class="plans">
 	{% for plan in page.pricing_table %}
 		<ul class="plan">
 			<li style="background: {{ plan.color }}">
 				<h3>{{ plan.name }}</h3>
 			</li>
 			{% for feature in plan.features %}
-				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }} </li>
+				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}</li>
 			{% endfor %}
-			<li style="padding-bottom:0px; margin-bottom: 0px;">Sponsored by</li>
-			<li>
-				<img style="height:{{ plan.sponsor.height }}; width:{{ plan.sponsor.width }};" src="{{ site.baseurl }}/images/{{ plan.sponsor.image }}" alt="IU logo">
-			</li>
 
 			{% if plan.call_to_action %}
-				<li class="pricing-cta"><div class="button">
-                    <a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}" 
-                    class="snipcart-add-item"
-                    data-item-id="{{plan.snipcart.data-item-id}}"
-                    data-item-price="{{plan.snipcart.data-item-price}}"
-                    data-item-url="{{plan.snipcart.data-item-url}}"
-                    data-item-description="{{ plan.snipcart.data-item-description }}"
-                    data-item-name="{{ plan.snipcart.data-item-description }}">
-                        {{ plan.call_to_action.text }} &rarr;
-                    </a></div></li>
+				<li class="pricing-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
 			{% endif %}
 		</ul>
 	{% endfor %}
-</div>
-<!-- <div class="contact-box"><script type="text/javascript">var submitted=false;</script>
+</div> -->
+<div class="contact-box"><script type="text/javascript">var submitted=false;</script>
 	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
 	onload="if(submitted) {window.location='{{ site.baseurl }}/contact-success/';}"></iframe>
 		
@@ -175,7 +157,7 @@ points:
 				</div>
 			  </div>
 			<input type="submit" value="Sign Up" />
-		</form></div> -->
+		</form></div>
 
 <!-- <div class="container">
 	<p class="subtext">Sponsored by</p>

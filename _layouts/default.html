@@ -8,6 +8,11 @@
 		{% seo %}
 		{% feed_meta %}
 
+		<link rel="preconnect" href="https://app.snipcart.com">
+		<link rel="preconnect" href="https://cdn.snipcart.com">
+		<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+
+
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
 
@@ -48,6 +53,8 @@
 				<p class="copyright">&copy; {{ site.time | date: '%Y' }} Anatomy for the FRCA - James Bowness & Alasdair Taylor  •  Website by Ben Sharif</a></p>
 			</div>
 		</footer>
+		<script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+		<div hidden id="snipcart" data-api-key="Mzg5ODM5MjktZjg3Ni00ODRlLTgxMjEtYTMxMWMwY2I2NzhiNjM3NTM0MTI2Mzc5NTkwMDQz" data-currency="gbp"></div>
 		<script>
 			document.getElementById("open-nav").onclick = function () {
 				document.body.classList.toggle("nav-open");
