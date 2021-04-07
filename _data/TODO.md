@@ -1,6 +1,6 @@
 Notes from 6/4/21 @ 21.00
 
-TO DO:
+TO DO: TODO
 
 Right hand larynx on wide screen
 Both image (incl axilla) on wide screen
