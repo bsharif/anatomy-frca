@@ -19,13 +19,21 @@ pricing_table:
     sponsor:
       image: IU_logo.png
       height: 100px
-      width: unset
+      width: 65%
     snipcart:
       data-item-id: Cardiff-04062021
       data-item-name: "Cardiff 4th June 2021"
       data-item-price: 70.00
       data-item-url: /course/
       data-item-description: "Anatomy for the FRCA Course - Cardiff - 4th June 2021"
+      data-item-custom1-name: "'Contact Number'"
+      data-item-custom1-required: "'true'"
+      data-item-custom2-name: "'Hospital Currently Working At'"
+      data-item-custom3-name: "'Which part of the FRCA exam are you studying for?'"
+      data-item-custom3-options: "'Primary MCQ|Primary OSCE-Viva|Final Written|Final SOE'"
+      data-item-custom4-name: "'Any dietry requirements for the course?'"
+      data-item-custom4-type: "textarea"
+      
   - name: St Andrews
     color: "#8e8e8e"
     features:
@@ -51,6 +59,14 @@ pricing_table:
       data-item-description: "Anatomy for the FRCA Course - St Andrews - 6th August 2021"
       data-item-custom1-name: "'Are you an SSA Member?'"
       data-item-custom1-options: "'No[+20.00]|Yes'"
+      data-item-custom2-name: "'Contact Number'"
+      data-item-custom2-required: "true"
+      data-item-custom3-name: "'Hospital Currently Working At'"
+      data-item-custom4-name: "'Which part of the FRCA exam are you studying for?'"
+      data-item-custom4-options: "'Primary MCQ|Primary OSCE-Viva|Final Written|Final SOE'"
+      data-item-custom5-name: "'Any dietry requirements for the course?'"
+      data-item-custom5-type: "textarea"
+
 faq:
 - question: What types of payment do you accept?
   answer: Credit cards including MasterCard, Visa or American Express.
@@ -84,16 +100,7 @@ points:
 <!-- <p class="subtext"><img src="{{ site.baseurl }}/images/course-photo.png" alt="SSA logo" style="width:100%" class="subtext" /></p> -->
 <div class="contact-box">
 	
-	<div class="contact-details" style="text-align: center;">
-		<!-- <h3 class="editable">Address</h3>
-		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address> -->
-
-		<h2 class="editable">Course Programme</h2>
-    {% for item in page.programme %}
-    <p style="margin-bottom:10px; text-align:left">{{ item }}</p>
 	
-    {% endfor %}
-	</div>
 	<div class="contact-details" style="text-align: center;">
 		<!-- <h3 class="editable">Address</h3>
 		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address> -->
@@ -105,6 +112,16 @@ points:
 			{% endfor %}
 
 			
+	</div>
+    <div class="contact-details" style="text-align: center;">
+		<!-- <h3 class="editable">Address</h3>
+		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address> -->
+
+		<h2 class="editable">Course Programme</h2>
+    {% for item in page.programme %}
+    <p style="margin-bottom:10px; text-align:left">{{ item }}</p>
+	
+    {% endfor %}
 	</div>
 </div>
 <div class="plans">
@@ -131,8 +148,55 @@ points:
                     data-item-description="{{ plan.snipcart.data-item-description }}"
                     data-item-name="{{ plan.snipcart.data-item-description }}"
                     {% if plan.snipcart.data-item-custom1-name %}
-                    data-item-custom1-name={{ plan.snipcart.data-item-custom1-name}}
-                    data-item-custom1-options={{ plan.snipcart.data-item-custom1-options}}
+                        data-item-custom1-name={{ plan.snipcart.data-item-custom1-name}}
+                        {% if plan.snipcart.data-item-custom1-options %}
+                        data-item-custom1-options={{ plan.snipcart.data-item-custom1-options}}
+                        {% endif %}
+                        {% if plan.snipcart.data-item-custom1-type %}
+                        data-item-custom1-options={{ plan.snipcart.data-item-custom1-options}}
+                        {% endif %}
+                        {% if plan.snipcart.data-item-custom1-required %}
+                        data-item-custom1-required={{ plan.snipcart.data-item-custom1-required}}
+                        {% endif %}
+                    {% endif %}
+                    {% if plan.snipcart.data-item-custom2-name %}
+                        data-item-custom2-name={{ plan.snipcart.data-item-custom2-name}}
+                        {% if plan.snipcart.data-item-custom2-options %}
+                        data-item-custom2-options={{ plan.snipcart.data-item-custom2-options}}
+                        {% endif %}
+                        {% if plan.snipcart.data-item-custom2-type %}
+                        data-item-custom2-options={{ plan.snipcart.data-item-custom2-options}}
+                        {% endif %}
+                        {% if plan.snipcart.data-item-custom2-required %}
+                        data-item-custom2-required={{ plan.snipcart.data-item-custom2-required}}
+                        {% endif %}
+                    {% endif %}
+                    {% if plan.snipcart.data-item-custom3-name %}
+                        data-item-custom3-name={{ plan.snipcart.data-item-custom3-name}}
+                        {% if plan.snipcart.data-item-custom3-options %}
+                        data-item-custom3-options={{ plan.snipcart.data-item-custom3-options}}
+                        {% endif %}
+                        {% if plan.snipcart.data-item-custom3-type %}
+                        data-item-custom3-options={{ plan.snipcart.data-item-custom3-options}}
+                        {% endif %}
+                    {% endif %}
+                    {% if plan.snipcart.data-item-custom4-name %}
+                        data-item-custom4-name={{ plan.snipcart.data-item-custom4-name}}
+                        {% if plan.snipcart.data-item-custom4-options %}
+                        data-item-custom4-options={{ plan.snipcart.data-item-custom4-options}}
+                        {% endif %}
+                        {% if plan.snipcart.data-item-custom4-type %}
+                        data-item-custom4-options={{ plan.snipcart.data-item-custom4-options}}
+                        {% endif %}
+                    {% endif %}
+                    {% if plan.snipcart.data-item-custom5-name %}
+                        data-item-custom5-name={{ plan.snipcart.data-item-custom5-name}}
+                        {% if plan.snipcart.data-item-custom5-options %}
+                        data-item-custom5-options={{ plan.snipcart.data-item-custom5-options}}
+                        {% endif %}
+                        {% if plan.snipcart.data-item-custom5-type %}
+                        data-item-custom5-options={{ plan.snipcart.data-item-custom5-options}}
+                        {% endif %}
                     {% endif %}
                     >
                         {{ plan.call_to_action.text }} &rarr;
