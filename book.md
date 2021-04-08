@@ -1,5 +1,6 @@
 ---
-title: Anatomy for the FRCA
+title: Book
+heading: Anatomy for the FRCA
 layout: book
 description: Alasdair Taylor and James Bowness
 sidebar:
@@ -7,7 +8,6 @@ sidebar:
   anatomy book for anaesthetists preparing for all parts of the FRCA exam. This is
   the first anatomy book specifically orientated for the FRCA exam, making it an essential
   resource for anaesthetists preparing for all parts of the FRCA examination.
-review: Read reviews of this book on
 ---
 
 It covers all body regions, relating underlying anatomy to practical procedures and anatomical principles, spanning the breadth of the curriculum and comprising exam-style questions:
