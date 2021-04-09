@@ -44,7 +44,7 @@ defaults:
       full_width: true
 url:
 baseurl:
-google_analytics_key:
+google_analytics_key: "G-KXLD641X4Y"
 google_maps_javascript_api_key:
 disqus_shortname:
 logo: "/siteicon.png"
