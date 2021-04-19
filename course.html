@@ -14,7 +14,8 @@ pricing_table:
       - text: £70 per person
         highlight: false
     call_to_action:
-      link: http://mysite.com?plan=basic
+      snipcart: true
+      link: "../course-full/"
       text: Cardiff Sign Up
     sponsor:
       image: IU_logo.png
@@ -46,6 +47,7 @@ pricing_table:
       - text: £70 (£50 for SSA members)
         highlight: false
     call_to_action:
+      snipcart: true
       link: http://mysite.com?plan=basic
       text: St Andrews Sign Up
     sponsor:
@@ -142,7 +144,7 @@ points:
         <img style="height:{{ plan.sponsor.height }}; width:{{ plan.sponsor.width }};" src="{{ site.baseurl }}/images/{{ plan.sponsor.image }}" alt="IU logo"></a>
 			</li>
 
-			{% if plan.call_to_action %}
+			{% if plan.call_to_action.snipcart == true %}
 				<li class="pricing-cta"><div class="button">
                     <a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}" 
                     class="snipcart-add-item"
@@ -205,6 +207,13 @@ points:
                     >
                         {{ plan.call_to_action.text }} &rarr;
                     </a></div></li>
+      {% elsif plan.call_to_action.snipcart == false %}
+      <li class="pricing-cta"><div class="button">
+        <a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}" 
+        >
+            {{ plan.call_to_action.text }} &rarr;
+        </a></div></li>
+
 			{% endif %}
 		</ul>
 	{% endfor %}
