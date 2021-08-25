@@ -6,7 +6,7 @@ pricing_table:
   - name: Cardiff
     color: "#91cbb1"
     features:
-      - text: 4th June 2021
+      - text: 25th February 2022
         highlight: true
       - text: School of Biosciences, Cardiff University
         highlight: false
@@ -14,7 +14,7 @@ pricing_table:
       - text: £70 per person
         highlight: false
     call_to_action:
-      snipcart: true  
+      snipcart: true
       link: "../course-full/"
       text: Cardiff Sign Up
     sponsor:
@@ -47,7 +47,7 @@ pricing_table:
       - text: £70 (£50 for SSA members)
         highlight: false
     call_to_action:
-      snipcart: true
+      snipcart: false
       link: "../course-full/"
       text: St Andrews Sign Up
     sponsor:
@@ -56,8 +56,8 @@ pricing_table:
       height: 80px
       width: 80px
     snipcart:
-      data-item-id: StAndrews-06052022
-      data-item-name: "Anatomy for the FRCA Course - St Andrews 6th May 2022"
+      data-item-id: StAndrews-06082021
+      data-item-name: "Anatomy for the FRCA Course - St Andrews 6th August 2021"
       data-item-price: 70.00
       data-item-url: /course/
       data-item-description: "School of Medicine, University of St Andrews."
@@ -144,7 +144,7 @@ points:
         <img style="height:{{ plan.sponsor.height }}; width:{{ plan.sponsor.width }};" src="{{ site.baseurl }}/images/{{ plan.sponsor.image }}" alt="IU logo"></a>
 			</li>
 
-			{% if plan.call_to_action.§ == true %}
+			{% if plan.call_to_action.snipcart == true %}
 				<li class="pricing-cta"><div class="button">
                     <a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}" 
                     class="snipcart-add-item"
